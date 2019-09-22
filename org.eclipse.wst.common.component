@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="backend_digitbank">
-        <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
-        <property name="java-output-path" value="/backend_digitbank/build/classes"/>
+    <wb-module deploy-name="digitalbank">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="frontend_digitalbank.war" deploy-path="/" handle="module:/resource/frontend_digitalbank/frontend_digitalbank">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="backend_digitbank.jar" deploy-path="/" handle="module:/resource/backend_digitbank/backend_digitbank">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
     </wb-module>
 </project-modules>
